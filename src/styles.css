@@ -1,0 +1,85 @@
+/* Reset 
+================================== */
+:root {
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+  --primary: #056ffb;
+  --primary-hover: #0063e6;
+  --secondary: #1397af;
+  --secondary-hover: #0d879c;
+  --danger: #eb5757;
+  --danger-hover: #d84747;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+p {
+  margin: 0;
+}
+hr{
+    opacity: .5;
+    width: 80%;
+}
+/* Utilities 
+================================== */
+.text-center {
+  text-align: center;
+}
+.text-lg {
+  font-size: 2.3rem;
+}
+.text-md {
+  font-size: 1.8rem;
+}
+.m-3 {
+  margin: 1rem;
+}
+.p-4 {
+  padding: 1.5rem;
+}
+/* flex
+  ================================== */
+[class*="flex"] {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.gap-1 {
+  gap: 1rem;
+}
+
+/* components 
+  ================================== */
+[class*="btn"] {
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+}
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+.btn-secondary {
+  background-color: var(--secondary);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+}
+.btn-danger {
+  background-color: var(--danger);
+}
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+}

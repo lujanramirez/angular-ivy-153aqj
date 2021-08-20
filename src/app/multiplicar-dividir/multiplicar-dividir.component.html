@@ -1,0 +1,16 @@
+<div class="text-center text-md m-3">
+  <p>Contador</p>
+  <p>{{ count }}</p>
+</div>
+
+<div class="flex-center gap-1 m-3">
+  <button (click)="multiply()" class="btn-primary">Multiplicar</button>
+  <button (click)="divide()" class="btn-secondary">Dividir</button>
+</div>
+
+<hr>
+
+<app-resetear 
+  [count]="count" 
+  (resetCount)="update( $event )">
+</app-resetear>

@@ -1,0 +1,17 @@
+
+<div class="text-center text-lg m-3">
+  <p>Contador</p>
+  <p>{{ count }}</p>
+</div>
+
+<div class="flex-center gap-1 m-3">
+  <button (click)="inc()" class="btn-primary">Incrementar</button>
+  <button (click)="dec()" class="btn-secondary">Decrementar</button>
+</div>
+
+<hr>
+
+<app-multiplicar-dividir
+[count]="count"
+(countChange)="update( $event )">
+</app-multiplicar-dividir>
